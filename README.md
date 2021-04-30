@@ -1,102 +1,77 @@
+[![Discord: https://discord.gg/A7h7bKBCVa](https://img.shields.io/badge/Discord-gray.svg?style=for-the-badge)](https://discord.gg/A7h7bKBCVa)
+[![License: GPL 3](https://img.shields.io/badge/License-GPL%203-blue.svg?style=for-the-badge&colorB=177DC1&label=license)](LICENSE)
 
-## Traefikv2 with Authelia over Cloudflare
-----
+# TraefikV2
 
-## FYI
+[Traefikv2](https://traefik.io/) with [Authelia](https://github.com/authelia/authelia) over Cloudflare
 
-```
-So if you see a broken part plz report it here
-           over githube issues
-           or on the Discord
+## Minimum Specs
 
-   All the Contributors you can see at the end 
+* Ubuntu 18/20 or Debian 9/10
+* 2 Cores
+* 4GB Ram
+* 20GB Disk Space
 
-```
+## Requirements
 
+* A VPS/VM or Dedicated Server
 
-## You need Help 
+* Domain
 
-```
-https://discord.gg/A7h7bKBCVa
-```
-Or create one issue 
-```
-https://github.com/doob187/Traefikv2/issues
-```
+* [Cloudflare](https://dash.cloudflare.com/sign-up) account free tier
 
+## Pre-Install
 
+1. Login to your Cloudflare Account & goto DNS click on Add record.
+2. Add 1 **A-Record** pointed to your server's ip.
+3. Copy your [CloudFlare-Global-Key](https://support.cloudflare.com/hc/en-us/articles/200167836-Managing-API-Tokens-and-Keys) and [CloudFlare-Zone-ID](https://support.cloudflare.com/hc/en-us/articles/200167836-Managing-API-Tokens-and-Keys).
 
-----
+### Set the following on Cloudflare
 
-## minimum specs 
-```
-Ubuntu 18/20 or Server or Debian 9/10
-2 Cores
-4GB Ram
-20GB Disk Space
-```
-
-----
-
-## minimum requirement
-```
-1 VPS / VM / dedicated Sever
-1 Domain
-1 Cloudflare Account  ( free level )
-```
-
-----
-
-## pre Install
-
-```
-Go to your CloudFlare Dashboard
-Add 1 A Record > pointed to the ServerIp
-Copy your CloudFlare-Global-Key and CloudFlare-Zone-ID
-```
-----
-
-Set follow on Cloudflare
-```
-SSL = FULL ( not FULL/STRICT )
-Always on = YES
-http to https = YES
-RocketLoader and Broli / Onion Routing = NO
-Tls min = 1.2
-TLS = v1.3
-```
-----
+1. `SSL = FULL` **( not FULL/STRICT )**
+2. `Always on = YES`
+3. `http to https = YES`
+4. `RocketLoader and Broli / Onion Routing = NO`
+5. `Tls min = 1.2`
+6. `TLS = v1.3`
 
 ## Easy Mode install
 
-```
-Long Line
-sudo wget -qO- https://raw.githubusercontent.com/doob187/traefikv2installer/main/wgetfile.sh >/tmp/install.sh && sudo bash /tmp/install.sh
+Run the following command:
 
-short liner
-
+```sh
 sudo wget -qO- https://git.io/JO7vg >/tmp/install.sh && sudo bash /tmp/install.sh
 ```
 
+<details>
+  <summary>Long commmand if the short one doesn't work.</summary>
+  <br />
 
-Then just follow the number and Press d/D to deploy
+  ```sh
+  sudo wget -qO- https://raw.githubusercontent.com/doob187/traefikv2installer/main/wgetfile.sh >/tmp/install.sh && sudo bash /tmp/install.sh
+  ```
 
-----
+</details>
 
-## Code and Permissions 
-```
-Copyright 2021 @doobsi 
+## Support
+
+Kindly report any issues/broken-parts/bugs on [github](https://github.com/doob187/Traefikv2/issues) or [discord](https://discord.gg/A7h7bKBCVa)
+
+* Join our [![Discord: https://discord.gg/A7h7bKBCVa](https://img.shields.io/badge/Discord-gray.svg?style=for-the-badge)](https://discord.gg/A7h7bKBCVa) for Support
+
+## Code and Permissions
+
+```sh
+Copyright 2021 @doobsi
 Code owner @doobsi @mrfret
-Dev Code @doobsi 
+Dev Code @doobsi
 Co-Dev -APPS- @mrfret
 ```
 
-Only @mrfret and @doobsi have access
-to change or pr00f any Pull Request
-( no one other )
+**Only @mrfret and @doobsi have access
+to change or proof any Pull Request**
 
 ----
-
 
 ## Contributors ✨
 
